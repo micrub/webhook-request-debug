@@ -1,0 +1,19 @@
+{
+  "name": "webhook-request-debug",
+  "version": "0.0.1",
+  "description": "webhook request debug/discover tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micrub/webhook-request-debug.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micrub/webhook-request-debug/issues"
+  },
+  "homepage": "https://github.com/micrub/webhook-request-debug#readme"
+}
