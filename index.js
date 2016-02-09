@@ -4,6 +4,8 @@
 //Lets require/import the HTTP module
 var http = require('http');
 var fs = require('fs');
+var qs = require('querystring');
+
 const PRFX = "webhook-request-debug";
 const SP = "-";
 
@@ -29,7 +31,7 @@ function handleRequest(request, response){
     responseString += chunk;
   });
   request.on('end', function () {
-    writeToLog(JSON.stringify(responseString));
+    writeToLog(JSON.stringify(qs.parse(responseString)));
   });
 
   response.end('It Works!! Path Hit: ' + request.url);
