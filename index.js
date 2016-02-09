@@ -31,7 +31,7 @@ function handleRequest(request, response){
     responseString += chunk;
   });
   request.on('end', function () {
-    writeToLog(qs.parse(responseString));
+    writeToLog(qs.parse(responseString).toString());
   });
 
   response.end('It Works!! Path Hit: ' + request.url);
